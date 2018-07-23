@@ -6,13 +6,16 @@ body {
   color: seashell;
   background-color: black;
   opacity: 0.9;
+  text-align: center;
 }
+
 
 /* Header */
 
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: fixed;
   width: 100%;
   background-color: black;
@@ -24,7 +27,6 @@ header nav p {
   text-dectoration: underline;
   display: inline-flex;
   justify-content: space-around;
-  margin-left: 20px;
   left: 10px;
   right: 10px;
 }
@@ -40,13 +42,13 @@ header img {
   background-image: url("../images/img-mission-background.jpg");
   height: 700px;
   width: 1200px;
+  margin: auto;
+  padding-top: 69px;
+
 }
 
-#mission div {
+#mission .our.mission {
   background-color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 /* Tea of the Month */
@@ -54,9 +56,40 @@ header img {
 .flex.features {
   display: flex;
   width: 1000px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
 }
 
 .flex.features img {
   height: 200px;
   width: 300px;
+  padding: 15px;
+}
+
+/* Locations */
+
+#locations {
+  background-image: url("../images/img-locations-background.jpg");
+  height: 500px;
+  width: 1200px;
+  margin: auto;
+  padding-top: 70px;
+}
+
+.flex.locations {
+  display: flex;
+  justify-content: center;
+}
+
+.location {
+  width: 300px;
+  opacity: 1;
+  background-color: black;
+  height: 250px;
+  justify-content: center;
+  flex-direction: column;
+  margin: 5px 20px;
+  display: flex;
+  padding: 10px;
 }
